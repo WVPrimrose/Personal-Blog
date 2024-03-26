@@ -1,0 +1,26 @@
+form p {
+    padding: 20px;
+}
+
+label {
+    display: block;
+    font-size: 20px;
+}
+
+input {
+    width: 75%;
+    
+}
+
+textarea {
+    width: 1000px;
+    height: 300px;
+}
+
+button {
+    color: #ffffff;
+    background-color: #001691;
+    font-size: 20px;
+    position: relative;
+    left: 600px;
+}
