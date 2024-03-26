@@ -1,3 +1,14 @@
+body {
+    background-color: #a7ffa7;
+
+}
+
+
+form h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
 form p {
     padding: 20px;
 }
@@ -5,22 +16,24 @@ form p {
 label {
     display: block;
     font-size: 20px;
+    padding-bottom: 20px;
 }
 
 input {
-    width: 75%;
-    
+    width: 93%;
 }
 
 textarea {
-    width: 1000px;
+    width: 1200px;
     height: 300px;
 }
 
 button {
-    color: #ffffff;
-    background-color: #001691;
+    color: #000000;
+    background-color: #dceaff;
     font-size: 20px;
     position: relative;
-    left: 600px;
+    left: 400px;
+    width: 400px;
+    border-radius: 2px;
 }
