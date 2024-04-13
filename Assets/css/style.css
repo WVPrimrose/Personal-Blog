@@ -37,3 +37,13 @@ button {
     width: 400px;
     border-radius: 2px;
 }
+
+#submit {
+    left: 400px;
+    width: 400px;
+}
+
+#back {
+    width: 100px;
+    left: 100px;
+}
