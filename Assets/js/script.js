@@ -1,7 +1,8 @@
-const button = document.getElementById('submit')
+const button = document.querySelector('#submit')
 const nameInput = document.getElementById('username')
 const title = document.getElementById('blog-title')
 const content = document.getElementById('comment')
+const themeSwitcher = document.querySelector
 let blogParts = []
 
 //creates blog post elements
@@ -31,7 +32,7 @@ function submit(event) {
     console.log(bT)
     console.log(message)
 }
-button.addEventListener('click', submit)
+button.addEventListener('click', submit);
 //light-dark mode
 let mode = 'light';
 
