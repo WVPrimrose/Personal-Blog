@@ -1,7 +1,7 @@
 const button = document.querySelector('#submit')
 const nameInput = document.getElementById('username')
-const title = document.getElementById('blog-title')
-const content = document.getElementById('comment')
+const titleInput = document.getElementById('blog-title')
+const contentInput = document.getElementById('comment')
 const themeSwitcher = document.querySelector
 let blogParts = []
 
@@ -23,16 +23,24 @@ const blogObject = {
 }
 
 //handles submit button on index.html
-function submit(event) {
+function submitBlog(event) {
     event.preventDefault();
     const name = nameInput.value
-    const bT = title.value
-    const message = content.value
+    const title = titleInput.value
+    const content = contentInput.value
+    const blog = {
+      name: name,
+      title: title,
+      content: content,
+    }
     console.log(name)
-    console.log(bT)
-    console.log(message)
+    console.log(title)
+    console.log(content)
+  localStorage.setItem('blog', JSON.stringify(blog));
 }
-button.addEventListener('click', submit);
+
+button.addEventListener('click', submitBlog);
+
 //light-dark mode
 let mode = 'light';
 
