@@ -37,6 +37,7 @@ function submitBlog(event) {
     console.log(title)
     console.log(content)
   localStorage.setItem('blog', JSON.stringify(blog));
+  localStorage.getItem('blog', JSON);
 }
 
 button.addEventListener('click', submitBlog);
