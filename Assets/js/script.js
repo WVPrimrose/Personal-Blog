@@ -24,7 +24,8 @@ const blogObject = {
 
 //handles submit button on index.html
 function submitBlog(event) {
-    event.preventDefault();
+    event.preventDefault();  
+    const localBlog = JSON.parse(localStorage.getItem('blog', JSON)) || [];
     const name = nameInput.value
     const title = titleInput.value
     const content = contentInput.value
@@ -33,11 +34,12 @@ function submitBlog(event) {
       title: title,
       content: content,
     }
+    localBlog.push(blog);
     console.log(name)
     console.log(title)
     console.log(content)
-  localStorage.setItem('blog', JSON.stringify(blog));
-  localStorage.getItem('blog', JSON);
+  localStorage.setItem('blog', JSON.stringify(localBlog));
+  window.location.href = 'blog-posts.html'
 }
 
 button.addEventListener('click', submitBlog);
