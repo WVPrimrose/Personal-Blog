@@ -1,26 +1,10 @@
+// This is defining the variables in the index.HTML file.
 const button = document.querySelector('#submit')
 const nameInput = document.getElementById('username')
 const titleInput = document.getElementById('blog-title')
 const contentInput = document.getElementById('comment')
 const themeSwitcher = document.querySelector
 let blogParts = []
-
-//creates blog post elements
-for (let i = 0; i < blogParts.length; i++) {
-const username = document.createElement(h3);
-const blogTitle = document.createElement(h3);
-const blogContent = document.createElement(p);
-
-username.textContent = '';
-blogTitle.textContent = '';
-blogContent.textContent = '';
-
-const blogObject = {
-    username: username,
-    blogTitle: blogTitle,
-    blogContent: blogContent,
-}
-}
 
 //handles submit button on index.html
 function submitBlog(event) {
@@ -35,16 +19,15 @@ function submitBlog(event) {
       content: content,
     }
     localBlog.push(blog);
-    console.log(name)
-    console.log(title)
-    console.log(content)
   localStorage.setItem('blog', JSON.stringify(localBlog));
   window.location.href = 'blog-posts.html'
 }
 
+// This is adding an event listener to the submit button.
 button.addEventListener('click', submitBlog);
 
-//light-dark mode
+// Accessing toggle swithc in HTML files (index and blog-posts)
+//light-dark mode will be default
 let mode = 'light';
 
 //themeSwitcher.addEventListener('click', function (){
