@@ -1,0 +1,49 @@
+body {
+    background-color: #a7ffa7;
+
+}
+
+
+form h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+form p {
+    padding: 20px;
+}
+
+label {
+    display: block;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+input {
+    width: 93%;
+}
+
+textarea {
+    width: 1200px;
+    height: 300px;
+}
+
+button {
+    color: #ffffff;
+    background-color: #020083;
+    font-size: 20px;
+    position: relative;
+    left: 400px;
+    width: 400px;
+    border-radius: 2px;
+}
+
+#submit {
+    left: 400px;
+    width: 400px;
+}
+
+#back {
+    width: 100px;
+    left: 100px;
+}
