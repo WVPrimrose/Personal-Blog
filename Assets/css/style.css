@@ -38,12 +38,15 @@ textarea {
     border-radius: 2px;
 }
 
+
 .switch {
-    border: 2px solid #000000;
     position: relative;
+    left: 850px;
     display: inline-block;
-    width: 600px;
-    height: 50px;
+    /* Switch Size */    
+    width: 75px;
+    height: 40px;
+
 }
 
 .switch input {
@@ -64,11 +67,12 @@ textarea {
     transition: .4s;
 }
 
+/* Switch Circle */
 .slider:before {
     position: absolute;
     content: "";
-    height: 26px;
-    width: 26px;
+    height: 30px;
+    width: 30px;
     left: 4px;
     bottom: 4px;
     background-color: white;
@@ -78,9 +82,30 @@ textarea {
 
 .switch-label {
     display: inline;
-    width: 60px;
+    width: 30px;
+    padding: 0;
 }
 
+/*Switch Roundness */
+.slider.round {
+    border-radius: 40px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+#light-mode-label {
+    position: relative;
+    right: 80px;
+    top: 5px;
+}
+
+#dark-mode-label {
+    position: relative;
+    left: 100px;
+    bottom: 55px;
+}
 #submit {
     left: 400px;
     width: 400px;
