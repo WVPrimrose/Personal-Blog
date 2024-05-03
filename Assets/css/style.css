@@ -3,6 +3,9 @@ body {
 
 }
 
+h1 {
+    text-align: center;
+}
 
 form h1 {
     text-align: center;
@@ -38,7 +41,34 @@ textarea {
     border-radius: 2px;
 }
 
+/* Light Mode */
+.light {
+    background-color: #a7ffa7;
+    color:#000000;
+}
 
+.light form {
+    color: #000000;
+}
+
+.light.next {
+    background-color: #020083;
+    color: #ffffff;
+}
+/* Dark Mode */
+.dark {
+    background-color: #023100;
+    color:#ffffff;
+}
+
+.dark form {
+    color: #ffffff;
+}
+
+dark.next {
+    background-color:#020083;
+    color:#000000
+}
 .switch {
     position: relative;
     left: 850px;
@@ -106,6 +136,8 @@ textarea {
     left: 100px;
     bottom: 55px;
 }
+
+/* Button ids */
 #submit {
     left: 400px;
     width: 400px;

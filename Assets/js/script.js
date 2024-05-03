@@ -3,9 +3,10 @@ const button = document.querySelector('#submit')
 const nameInput = document.getElementById('username')
 const titleInput = document.getElementById('blog-title')
 const contentInput = document.getElementById('comment')
-const themeSwitcher = document.querySelector
 let blogParts = []
-
+// This is defining theme switcher elements
+const themeSwitcher = document.getElementById('theme-switcher')
+const container = document.querySelector('.container')
 //handles submit button on index.html
 function submitBlog(event) {
     event.preventDefault();  
@@ -30,13 +31,17 @@ button.addEventListener('click', submitBlog);
 //light-dark mode will be default
 let mode = 'light';
 
-//themeSwitcher.addEventListener('click', function (){
-  //  if (mode === 'light') {
-    //    mode = 'dark';
-      //  container.setAttribute('class', 'dark');
-   // }
-   // else {
-     //   mode = 'light';
-       // constainer.setAttribute('class', 'light');
-//     }
-// })
+themeSwitcher.addEventListener('click', function (){
+  // If the mode is light, apply dark background
+   if (mode === 'light') {
+       mode = 'dark';
+       container.setAttribute('class', 'dark');
+   }
+  //  If the mode is dark, apply light background
+   else {
+       mode = 'light';
+       container.setAttribute('class', 'light');
+    }
+})
+
+

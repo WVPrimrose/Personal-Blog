@@ -6,9 +6,21 @@
     <title>Blog Posts</title>
     <link rel="stylesheet" href="Assets/css/style.css">
 </head>
-<body>
+<body class="container">
 <a href="index.html"><input type="button" class="next" id="back" value="back">Back</input></a>
 <h1>See All Blogs!</h1>
+<div class="switch">
+    <div>
+        <p class="switch-label" id="light-mode-label">LIGHT MODE</p>
+    </div>
+    <div>
+        <input type="checkbox" name="" class="switch-label" id="theme-switcher">
+        <span class="slider round"></span>
+    </div>
+    <div>
+        <p class="switch-label" id="dark-mode-label">DARK MODE</p>
+    </div>
+</div>
 <div id= "all-blogs"></div>
 
     <script src="Assets/js/script2.js"></script>
