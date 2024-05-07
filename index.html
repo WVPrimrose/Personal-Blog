@@ -6,10 +6,22 @@
     <title>Personal Blog</title>
     <link rel="stylesheet" href="Assets/css/style.css" />
 </head>
-<body>
+<body class="container light">
     <main>
         <form>
             <h1>Create Your Personal Blog here!</h1>
+            <div class="switch">
+                <div>
+                    <p class="switch-label" id="light-mode-label">LIGHT MODE</p>
+                </div>
+                <div>
+                    <input type="checkbox" name="" class="switch-label">
+                    <span class="slider round" id="theme-switcher"></span>
+                </div>
+                <div>
+                    <p class="switch-label" id="dark-mode-label">DARK MODE</p>
+                </div>
+            </div>
             <p>
             <label for="username">Name:</label>
             <input id="username" placeholder="Enter Name" />
@@ -21,13 +33,14 @@
             <textarea id="comment" placeholder="Blog Content goes here."></textarea>
             </p>
             <p>
-                <!-- <a href="blog-posts.html"> -->
-                    <input type="button" value="submit" id="submit" class="next">
-                <!-- </a> -->
+                <input type="button" value="submit" id="submit" class="next">
             </p>
 
         </form>
     </main>
+    <footer>
+        <h3>Created by <a href="https://wvprimrose.github.io/Katie-Buchholz-Portfolio/">Katie Buchholz</a></h3>
+    </footer>
     <script src="Assets/js/script.js"></script>
 </body>
 </html>

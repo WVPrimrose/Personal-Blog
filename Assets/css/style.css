@@ -1,8 +1,10 @@
 body {
     background-color: #a7ffa7;
-
 }
 
+h1 {
+    text-align: center;
+}
 
 form h1 {
     text-align: center;
@@ -28,6 +30,10 @@ textarea {
     height: 300px;
 }
 
+footer {
+    text-align: center;
+}
+
 .next {
     color: #ffffff;
     background-color: #020083;
@@ -38,6 +44,113 @@ textarea {
     border-radius: 2px;
 }
 
+/* Light Mode */
+.light {
+    background-color: #a7ffa7;
+    color:#000000;
+}
+
+.light form {
+    color: #000000;
+}
+
+.light.next {
+    background-color: #020083;
+    color: #ffffff;
+}
+/* Dark Mode */
+.dark {
+    background-color: #023100;
+    color:#ffffff;
+}
+
+.dark form {
+    color: #ffffff;
+}
+
+dark.next {
+    background-color:#020083;
+    color:#000000
+}
+
+.dark a {
+    color: #7f7cfa;
+}
+.switch {
+    position: relative;
+    left: 850px;
+    display: inline-block;
+    /* Switch Size */    
+    width: 75px;
+    height: 40px;
+
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+/* Switch Circle */
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 30px;
+    width: 30px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  } 
+
+.switch-label {
+    display: inline;
+    width: 30px;
+    padding: 0;
+}
+
+/*Switch Roundness */
+.slider.round {
+border-radius: 40px;
+}
+  
+.slider.round:before {
+border-radius: 50%;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+#light-mode-label {
+    position: relative;
+    right: 80px;
+    top: 5px;
+}
+
+#dark-mode-label {
+    position: relative;
+    left: 100px;
+    bottom: 55px;
+}
+
+/* Button ids */
 #submit {
     left: 400px;
     width: 400px;
