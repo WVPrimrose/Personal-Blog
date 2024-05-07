@@ -9,7 +9,7 @@ for (let i = 0; i < blogItems.length; i++) {
     // creates div container for each new blog entry
     const newBlog = document.createElement('div');
     newBlog.setAttribute('style', 
-    'border: 3px solid #000000; margin-top: 10px;'
+    'border: 3px solid #ffffff; margin-top: 10px;'
     );
     // creates h2 element for each username
     const username = document.createElement('h2');
@@ -24,7 +24,7 @@ for (let i = 0; i < blogItems.length; i++) {
     blogTitle.textContent = blogItems[i].title
     blogTitle.setAttribute(
         'style',
-        'font-size: 30px; color: #000080;'
+        'font-size: 30px; color: #000080; background-color: #ffffff;'
     );
     newBlog.appendChild(blogTitle);    
     // create p element for each Blog Content

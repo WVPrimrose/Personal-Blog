@@ -1,6 +1,5 @@
 body {
     background-color: #a7ffa7;
-
 }
 
 h1 {
@@ -29,6 +28,10 @@ input {
 textarea {
     width: 1200px;
     height: 300px;
+}
+
+footer {
+    text-align: center;
 }
 
 .next {
@@ -68,6 +71,10 @@ textarea {
 dark.next {
     background-color:#020083;
     color:#000000
+}
+
+.dark a {
+    color: #7f7cfa;
 }
 .switch {
     position: relative;
@@ -118,12 +125,18 @@ dark.next {
 
 /*Switch Roundness */
 .slider.round {
-    border-radius: 40px;
-  }
+border-radius: 40px;
+}
   
-  .slider.round:before {
-    border-radius: 50%;
-  }
+.slider.round:before {
+border-radius: 50%;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
 
 #light-mode-label {
     position: relative;
